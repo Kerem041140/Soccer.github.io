@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soccer — İndir</title>
+  <meta name="description" content="Soccer oyunu indirme sayfası." />
+  <style>
+    :root{--accent:#0b84ff;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%, #081426 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:72px;height:72px;border-radius:12px;background:transparent;border:4px solid rgba(255,255,255,0.06);object-fit:cover}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .about h2{margin:0 0 8px}
+    .download-area{display:flex;flex-direction:column;gap:12px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe7ff}
+    .meta{color:var(--muted);font-size:13px}
+    .specs{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .spec{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-size:13px;color:#d6e9ff}
+    .screens{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .screens img{width:100%;height:120px;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    .feature{padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.screens{grid-template-columns:repeat(2,1fr)}.hero-right{order:-1}}
+    @media (max-width:520px){.screens{grid-template-columns:1fr}.container{padding:14px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <!-- Logo dosyan: soccer.png -->
+      <img class="logo" src="./soccer.png" alt="Soccer Logo" />
+      <div>
+        <h1>Soccer — İndir</h1>
+        <p class="lead">Hafif ve eğlenceli Soccer oyunu. Aşağıdan Windows için oyunu indirebilirsiniz.</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card about">
+        <h2>Oyuna Hızlı Başlangıç</h2>
+        <p class="meta">Aşağıdaki "İNDİR" butonuna basarak Soccer oyununu indirebilirsiniz.</p>
+
+        <div class="download-area">
+          <!-- Eğer dosyayı repo köküne koyduysan bu link çalışır -->
+          <!-- Not: Eğer exe >25MB ise GitHub'a doğrudan yüklenmez; o zaman Releases linkini kullan. -->
+          <a id="downloadBtn" class="btn btn-primary" href="./soccerv2.exe" download>İNDİR (Windows • .exe)</a>
+          <p class="meta">* Eski Windows sürümleri için önerilmez. Windows 10+ tavsiye edilir.</p>
+        </div>
+
+        <div class="specs">
+          <div class="spec">Dosya: <strong>soccerv2.exe</strong> (.exe)</div>
+          <div class="spec">Platform: Windows</div>
+          <div class="spec">Sürüm: 2.0</div>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <strong>Oyun Hakkında</strong>
+            <ul>
+              <li>1 – 2 – 1 – 1 – 3 – 1 – 2 – 1 gibi dizilimleri seçebilirsiniz.</li>
+              <li>Renkleri özgürce ayarlayabilirsiniz.</li>
+              <li>Top modelini seçebilirsiniz.</li>
+            </ul>
+          </div>
+          <div class="feature">
+            <strong>Geliştirici</strong>
+            <ul>
+              <li>Python ile geliştirilmiştir.</li>
+              <li>KEREM TÜRKMEN tarafından yapılmıştır.</li>
+              <li>MADE IN TURKEY 🇹🇷</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style="margin-top:14px">Ekran Görüntüleri</h3>
+        <div class="screens">
+          <img src="./dizilimler.png" alt="Dizilimler">
+          <img src="./oyuncutoplar.png" alt="Oyuncu renkleri ve toplar">
+          <img src="./saha.png" alt="Saha ve oyun tipi">
+        </div>
+      </div>
+
+      <aside class="card hero-right">
+        <h3>Yükleme Bilgisi</h3>
+        <p class="meta">İNDİR butonuna bastığınızda (eğer dosya repoda ise) tarayıcı doğrudan <strong>soccerv2.exe</strong> dosyasını indirir.</p>
+        <ol>
+          <li>İndirilen dosyaya çift tıklayın.</li>
+          <li>Kurulum gerekmez; direkt açılır (exe oyun ise çalıştırın).</li>
+          <li>Eski Windows sistemlerinde (Win7/8) çalışması garanti edilmez.</li>
+        </ol>
+
+        <div style="margin-top:14px" class="card" aria-hidden="true">
+          <strong>Not</strong>
+          <p class="meta">Eğer <strong>soccerv2.exe</strong> dosyan 25 MB'tan büyükse, GitHub repo'ya tarayıcı üzerinden yüklenmez. Bu durumda EXE'yi <em>Releases</em> bölümüne yükleyip oradaki kalıcı linki kullanmalısın. Linki bana gönder, ben HTML'i o linke göre ayarlarım.</p>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      Hazırlayan: Otomatik demo • Dosyaları repo'na yükleyip test et.
+    </footer>
+  </div>
+</body>
+</html>
