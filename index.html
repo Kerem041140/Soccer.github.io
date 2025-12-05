@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Soccer - İndirme Sayfası</title>
+  <meta name="description" content="Basit, temiz ve GitHub Pages ile uyumlu Soccer oyunu indirme sayfası." />
+  <style>
+    :root{--accent:#0b84ff;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071021 0%, #081426 60%);-webkit-font-smoothing:antialiased}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:72px;height:72px;border-radius:12px;background:url('https://images.unsplash.com/photo-1517927033932-b6d6f0b3b1f1?auto=format&fit=crop&w=800&q=60') center/cover;border:4px solid rgba(255,255,255,0.06)}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    .hero{display:grid;grid-template-columns:1fr 340px;gap:24px;margin-top:22px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    .about h2{margin:0 0 8px}
+    .download-area{display:flex;flex-direction:column;gap:12px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:white}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#cfe7ff}
+
+    .meta{color:var(--muted);font-size:13px}
+    .specs{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .spec{background:rgba(255,255,255,0.02);padding:8px 10px;border-radius:8px;font-size:13px;color:#d6e9ff}
+
+    .screens{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .screens img{width:100%;height:120px;object-fit:cover;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+
+    .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+    .feature{padding:10px;border-radius:8px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
+
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.screens{grid-template-columns:repeat(2,1fr)}.hero-right{order: -1}}
+    @media (max-width:520px){.screens{grid-template-columns:1fr}.container{padding:14px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="logo" src="./soccer.png" alt="Soccer Logo" />
+      <div>
+        <h1>Soccer — İndir</h1>
+        <p class="lead">Hafif ve eğlenceli Soccer oyunu. Windows için .zip paketini repo'ya ekleyip bu sayfayı GitHub Pages olarak yayınlayabilirsiniz.</p>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card about">
+        <h2>Oyuna Hızlı Başlangıç</h2>
+        <p class="meta">Aşağıdaki "İNDİR" butonuna basarak Windows için Soccer oyununu indirip çalıştırabilirsiniz.</p>
+
+        <div class="download-area">
+          <a class="btn btn-primary" href="./soccer.zip" download>İNDİR (Windows • ZIP)</a>
+          <p class="meta">* Eski Windows sürümleri için önerilmez. Windows 10+ tavsiye edilir.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <strong>Oyun Hakkında</strong>
+            <ul>
+              <li>1 – 2 – 1 – 1 – 3 – 1 – 2 – 1 – "1" gibi oyuncu dizilimlerini seçebilirsiniz.</li>
+              <li>Renkleri tamamen özgürce ayarlayabilirsiniz.</li>
+              <li>Top modelini bile değiştirebilirsiniz.</li>
+              <li>Hafif, hızlı açılan maç sistemi.</li>
+            </ul>
+          </div>
+          <div class="feature">
+            <strong>Geliştirici</strong>
+            <ul>
+              <li>Python ile geliştirilmiştir.</li>
+              <li>KEREM TÜRKMEN tarafından yapılmıştır.</li>
+              <li>MADE IN TURKEY 🇹🇷</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style="margin-top:14px">Ekran Görüntüleri</h3>
+        <div class="screens">
+          <img src="./dizilimler.png" alt="Dizilimler">
+          <img src="./oyuncutoplar.png" alt="Oyuncu renkleri ve toplar">
+          <img src="./saha.png" alt="Saha ve oyun tipi">
+        </div>
+      </div>
+
+      <aside class="card hero-right">
+        <h3>Yükleme Bilgisi</h3>
+        <p class="meta">İNDİR butonuna bastığınızda gönderdiğiniz zip dosyası otomatik olarak indirilecektir.</p>
+        <ol>
+          <li>İndirilen dosyaya çift tıklayın.</li>
+          <li>Kurulum gerekmez; direkt açılır.</li>
+          <li>Eski Windows sistemlerinde (Win7/8) çalışması garanti edilmez.</li>
+        </ol>
+
+        
+      </aside>
+    </section>
+
+    <footer>
+      Hazırlayan: Otomatik oluşturulan demo sayfası • Dosyaları repo'nuzda düzenleyin ve test edin.
+    </footer>
+  </div>
+</body>
+</html>
